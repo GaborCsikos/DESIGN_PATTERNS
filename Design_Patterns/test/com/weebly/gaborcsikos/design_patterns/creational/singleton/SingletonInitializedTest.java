@@ -3,7 +3,8 @@
  */
 package com.weebly.gaborcsikos.design_patterns.creational.singleton;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 /**
@@ -16,11 +17,11 @@ public class SingletonInitializedTest {
 
 	@Test
 	public void testSingleton() {
-		Assert.assertEquals(1, SingletonInitialized.getInstance()
+		assertEquals(1, SingletonInitialized.getInstance()
 				.getNumberOfInstance());
-		Assert.assertEquals(1, SingletonInitialized.getInstance()
+		assertEquals(1, SingletonInitialized.getInstance()
 				.getNumberOfInstance());
-		Assert.assertEquals(1, SingletonInitialized.getInstance()
+		assertEquals(1, SingletonInitialized.getInstance()
 				.getNumberOfInstance());
 	}
 

@@ -3,7 +3,8 @@
  */
 package com.weebly.gaborcsikos.design_patterns.creational.singleton;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 /**
@@ -16,9 +17,9 @@ public class SingletonEnumTest {
 
 	@Test
 	public void testSingleton() {
-		Assert.assertEquals(1, SingletonEnum.INSTANCE.getNumberOfInstance());
-		Assert.assertEquals(1, SingletonEnum.INSTANCE.getNumberOfInstance());
-		Assert.assertEquals(1, SingletonEnum.INSTANCE.getNumberOfInstance());
+		assertEquals(1, SingletonEnum.INSTANCE.getNumberOfInstance());
+		assertEquals(1, SingletonEnum.INSTANCE.getNumberOfInstance());
+		assertEquals(1, SingletonEnum.INSTANCE.getNumberOfInstance());
 	}
 
 }

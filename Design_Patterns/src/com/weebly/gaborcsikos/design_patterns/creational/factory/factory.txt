@@ -1,0 +1,18 @@
+Intent:
+Define an interface for creating an object, but let subclasses decide which class to
+instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+Use the Prototype pattern when:
+• a class can't anticipate the class of objects it must create.
+• a class wants its subclasses to specify the objects it creates.
+• classes delegate responsibility to one of several helper subclasses, and you want
+to localize the knowledge of which helper subclass is the delegate.
+
+Benefits:
+Provides hooks for subclasses.
+Connects parallel class hierarchies
+
+Examples:
+java.util.Calendar#getInstance()
+java.util.ResourceBundle#getBundle()
+java.text.NumberFormat#getInstance()
