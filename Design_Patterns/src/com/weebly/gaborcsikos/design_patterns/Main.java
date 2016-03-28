@@ -5,15 +5,14 @@ package com.weebly.gaborcsikos.design_patterns;
 
 /**
  * @author Gabor Csikos
- *
+ * 
  */
-public class Man {
+public class Main {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 
