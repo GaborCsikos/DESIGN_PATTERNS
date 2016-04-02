@@ -15,7 +15,7 @@ public class BuilderForNutritionTest {
 
 	@Test
 	public void testRequired() {
-		BuilderForNutrition builder = new BuilderForNutrition.Builder(10, 20,
+		Nutrition builder = new Nutrition.Builder(10, 20,
 				30).build();
 
 		assertEquals(10, builder.getProtein());
@@ -25,7 +25,7 @@ public class BuilderForNutritionTest {
 
 	@Test
 	public void testOptional() {
-		BuilderForNutrition builder = new BuilderForNutrition.Builder(10, 20,
+		Nutrition builder = new Nutrition.Builder(10, 20,
 				30).calories(500).build();
 
 		assertEquals(10, builder.getProtein());

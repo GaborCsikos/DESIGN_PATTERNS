@@ -7,7 +7,7 @@ package com.weebly.gaborcsikos.design_patterns.creational.builder;
  * @author Gabor Csikos
  * 
  */
-public class BuilderForNutrition {
+public class Nutrition {
 
 	// parameters
 	private final int protein;
@@ -49,12 +49,12 @@ public class BuilderForNutrition {
 			return this;
 		}
 
-		public BuilderForNutrition build() {
-			return new BuilderForNutrition(this);
+		public Nutrition build() {
+			return new Nutrition(this);
 		}
 	}
 
-	private BuilderForNutrition(Builder builder) {
+	private Nutrition(Builder builder) {
 		protein = builder.protein;
 		carbohydrate = builder.carbohydrate;
 		fat = builder.fat;
