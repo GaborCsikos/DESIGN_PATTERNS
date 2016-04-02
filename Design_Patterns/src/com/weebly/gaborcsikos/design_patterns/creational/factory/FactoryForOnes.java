@@ -7,7 +7,7 @@ package com.weebly.gaborcsikos.design_patterns.creational.factory;
  * @author Gabor Csikos
  * 
  */
-public class FactoryForOnes extends Factory {
+public class FactoryForOnes extends NumberFactory {
 
 	public static final String ONE = "1";
 	public static final String ONE_FOR_SHORT = "1";

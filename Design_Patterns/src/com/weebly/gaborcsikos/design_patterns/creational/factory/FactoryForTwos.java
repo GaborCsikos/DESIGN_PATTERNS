@@ -1,6 +1,6 @@
 package com.weebly.gaborcsikos.design_patterns.creational.factory;
 
-public class FactoryForTwos extends Factory {
+public class FactoryForTwos extends NumberFactory {
 	public static final String TWO = "2";
 	public static final String TWO_FOR_SHORT = "2";
 

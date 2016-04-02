@@ -16,7 +16,7 @@ import org.junit.Test;
  */
 public class FactoryTest {
 
-	private Factory factory;
+	private NumberFactory factory;
 
 	/**
 	 * @throws java.lang.Exception
