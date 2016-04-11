@@ -1,0 +1,24 @@
+Intent:
+Attach additional responsibilities to an object dynamically. Decorators provide a
+flexible alternative to subclassing for extending functionality.
+
+Use the Decorator pattern when:
+• to add responsibilities to individual objects dynamically and transparently, that
+is, without affecting other objects.
+• for responsibilities that can be withdrawn.
+• when extension by subclassing is impractical. Sometimes a large number of
+independent extensions are possible and would produce an explosion of
+subclasses to support every combination. Or a class definition may be hidden or
+otherwise unavailable for subclassing.
+
+Benefits:
+
+• More flexibility than static inheritance
+• Avoids feature-laden classes high up in the hierarchy.
+• A decorator and its component aren't identical.
+• Lots of little objects.
+
+Examples:
+All subclasses of java.io.InputStream, OutputStream, Reader and Writer have a constructor taking an instance of same type.
+java.util.Collections, the checkedXXX(), synchronizedXXX() and unmodifiableXXX() methods.
+javax.servlet.http.HttpServletRequestWrapper and HttpServletResponseWrapper
