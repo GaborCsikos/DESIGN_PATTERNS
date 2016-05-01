@@ -3,6 +3,8 @@
  */
 package com.weebly.gaborcsikos.design_patterns.structural.flyweight;
 
+import static com.weebly.gaborcsikos.design_patterns.structural.flyweight.BeverageType.COFEE;
+import static com.weebly.gaborcsikos.design_patterns.structural.flyweight.BeverageType.TEE;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -21,22 +23,22 @@ public class BeverageFlyWeightTest {
 	@Test
 	public void testObjectCreated() {
 		int totalPrice = 0;
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveCoffee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
-		totalPrice += flyWeight.serveTee().getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(COFEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
+		totalPrice += flyWeight.serveBeverage(TEE).getPrice();
 
 		// served 16 times
 		assertEquals(16, flyWeight.getServed());
