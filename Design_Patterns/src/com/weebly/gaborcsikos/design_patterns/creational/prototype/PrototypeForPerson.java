@@ -9,7 +9,7 @@ package com.weebly.gaborcsikos.design_patterns.creational.prototype;
  * @author Gabor Csikos
  * 
  */
-public class PrototypeForPerson {
+public class PrototypeForPerson implements Cloneable {
 
 	private String name;
 	private long id;

@@ -1,0 +1,18 @@
+Intent:
+Encapsulate a request as an object, thereby letting you parameterize clients with
+different requests, queue or log requests, and support undoable operations.
+
+Use the Command pattern when you want to:
+• parameterize objects by an action to perform
+• specify, queue, and execute requests at different times.
+• support undo.
+• support logging.
+• structure a system around high-level operations built on primitives operations.
+Such a structure is common in information systems that support transactions
+
+Benefits:
+Explained in the use Command section
+
+Examples:
+All implementations of java.lang.Runnable
+All implementations of javax.swing.Action
