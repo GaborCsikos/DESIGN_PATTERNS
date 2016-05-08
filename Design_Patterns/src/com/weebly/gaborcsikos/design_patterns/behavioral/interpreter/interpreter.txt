@@ -1,0 +1,21 @@
+Intent:
+Given a language, define a represention for its grammar along with an interpreter that
+uses the representation to interpret sentences in the language.
+
+Use the Interpreter pattern when you want to:
+• LiteralExpression will check if the input matches the literal it defines,
+• AlternationExpression will check if the input matches any of its alternatives,
+• RepetitionExpression will check if the input has multiple copies of expression it
+repeats,
+
+Benefits:
+It's easy to change and extend the grammar.
+Implementing the grammar is easy, too.
+Complex grammars are hard to maintain.
+Adding new ways to interpret expressions.
+
+Examples:
+java.util.Pattern
+java.text.Normalizer
+All subclasses of java.text.Format
+All subclasses of javax.el.ELResolver
