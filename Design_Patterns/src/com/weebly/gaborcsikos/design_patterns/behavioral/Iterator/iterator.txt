@@ -1,0 +1,19 @@
+Intent:
+Provide a way to access the elements of an aggregate object sequentially without
+exposing its underlying representation.
+
+Use the Iterator pattern when you want to:
+• to access an aggregate object's contents without exposing its internal
+representation.
+• to support multiple traversals of aggregate objects.
+• to provide a uniform interface for traversing different aggregate structures (that
+is, to support polymorphic iteration).
+
+Benefits:
+More than one traversal can be pending on an aggregate.
+Iterators simplify the Aggregate interface.
+It supports variations in the traversal of an aggregate.
+
+Examples:
+All implementations of java.util.Iterator 
+All implementations of java.util.Enumeration
