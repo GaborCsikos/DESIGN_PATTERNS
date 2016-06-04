@@ -1,8 +1,14 @@
-package com.weebly.gaborcsikos.design_patterns.behavioral.Mediator;
+package com.weebly.gaborcsikos.design_patterns.behavioral.mediator;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import com.weebly.gaborcsikos.design_patterns.behavioral.mediator.FirstScreen;
+import com.weebly.gaborcsikos.design_patterns.behavioral.mediator.ItemsForSelection;
+import com.weebly.gaborcsikos.design_patterns.behavioral.mediator.Mediator;
+import com.weebly.gaborcsikos.design_patterns.behavioral.mediator.SecondScreen;
+import com.weebly.gaborcsikos.design_patterns.behavioral.mediator.SelectedItemOnScreen;
 
 /**
  * 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.weebly.gaborcsikos.design_patterns.behavioral.Mediator;
+package com.weebly.gaborcsikos.design_patterns.behavioral.mediator;
 
 /**
  * @author Gabor Csikos
