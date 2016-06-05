@@ -1,0 +1,23 @@
+Intent:
+Define a one-to-many dependency between objects so that when one object changes
+state, all its dependents are notified and updated automatically.
+
+Use the Observer pattern when
+
+• When an abstraction has two aspects, one dependent on the other. Encapsulating
+these aspects in separate objects lets you vary and reuse them independently.
+• When a change to one object requires changing others, and you don't know how
+many objects need to be changed.
+• 
+
+Benefits:
+Preserving encapsulation boundaries.
+It simplifies Originator.
+Using mementos might be expensive.
+Defining narrow and wide interfaces.
+Hidden costs in caring for mementos.
+
+Examples:
+java.util.Date (the setter methods do that, Date is internally represented by a long value)
+All implementations of java.io.Serializable
+All implementations of javax.faces.component.StateHolder
